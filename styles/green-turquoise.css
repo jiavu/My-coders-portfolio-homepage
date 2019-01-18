@@ -5,6 +5,9 @@
     --black: hsla(0, 0%, 7%, 1);
     --darkgrey: hsla(0, 0%, 14%, 1);
     --midgrey: hsla(0, 0%, 22%, 1);
+    --dampedcolor: hsla(148, 54%, 42%, 1);
     --color: hsla(148, 54%, 49%, 1);
+    --lightedcolor: hsla(148, 54%, 52%, 1);
+    --dampedwhite: hsla(0, 0%, 88%, 1);
     --white: hsla(0, 0%, 95%, 1);
 }
