@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!-- saved from url=(0017)https://jiavu.de/ -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Jan-Patrick Tyra</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- unused: -->
+        <!-- <link rel="stylesheet" type="text/css" media="screen" href="./plugins/themetrust-social/styles.css"> -->
+        <!-- https://fontawesome.com/ -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        
+        <!-- COLORS -->
+        <link rel="stylesheet" type="text/css" media="screen" href="./styles/orange-red.css" id="color-set">
+        <link rel="stylesheet" type="text/css" media="screen" href="jiavu.css"/>
+
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Rubik|Source+Sans+Pro|Thasadith|Coiny" rel="stylesheet">
+        <!-- I need a better solution. Like a function to insert all fonts registered in data.js -->
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/carlito" type="text/css"/>
+
+        <!-- SCRIPTS(1) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+
+        <!-- data: -->
+        <script src="./data/data.js"></script>
+        
+    </head>
+
+    <body>
+        <!-- <div id="sticky-ref"></div> -->
+        <div id="Safari-issue">This page doesn't work properly on Safari yet.</div>
+        <div id="container">
+
+            <header>
+                <h1>Jan-Patrick Tyra</h1>
+                <h2>Coding in Javascript/HTML/CSS</h2>
+            </header>
+
+            <!-- Navigation -->
+            <nav class="sticky no-text-selection">
+                <div class="navigation" id="horizontal-nav">
+                    <ul class="nav-list" id="ul-hor">
+                        <li><a href="#About" class="nav-link">About</a></li>
+                        <li><a href="#Works" class="nav-link">Works</a></li>
+                        <li><a href="#Dev-tools" class="nav-link">Dev Tools</a></li>
+                        <li><a href="#Misc" class="nav-link">Misc</a></li>
+                        <!-- <li class="nav-link"><i class="fas fa-palette"></i></li> -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="nav-link"><i class="fas fa-paint-brush"></i></a>
+                            <ul class="dropdown-content nav-list" id="color-themes">
+                                <li id="orange-red" class="nav-link">orange-red</li>
+                                <li id="cherry_tomato" class="nav-link">cherry tomato</li>
+                                <li id="green-turquoise" class="nav-link">green-turquoise</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="nav-link"><i class="far fa-envelope"></i></a>
+                            <div class="dropdown-content" id="email-address">jan.p.tyra@gmail.com</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="menu-icon"><i class="fas fa-bars"></i></div>
+
+                <div class="navigation" id="vertical-nav">
+                    <a id="close-nav" class="nav-link"><i class="fas fa-times"></i></a>
+
+                    <ul class="nav-list" id="ul-vert">
+                        <li><a href="#About" class="nav-link">About</a></li>
+                        <li><a href="#Works" class="nav-link">Works</a></li>
+                        <li><a href="#Dev-tools" class="nav-link">Dev Tools</a></li>
+                        <li><a href="#Misc" class="nav-link">Misc</a></li>
+                        <!-- <li class="nav-link"><i class="fas fa-palette"></i></li> -->
+                        <li class="nav-link"><i class="fas fa-paint-brush"></i></li>
+                        <li class="nav-link"><i class="far fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main ng-app="myData" ng-controller="displayData">
+
+                <!-- under construction bar -->
+                <section class="colored-bg">
+                    <div id="underConstruction">
+                        <div class="flip-box">
+                            <div class="flip-box-front"></div>
+                            <div class="flip-box-back">
+                                <div>
+                                    <p style="font-size: 0.7rem;"><i>"This webpage is under construction."</i></p>
+                                    <p style="text-align: right;margin-top: 0.4rem;">Jan-Patrick Tyra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="hr"><div></div></div>
+
+                <!-- ABOUT -->
+                <section id="About" class="get-closing-tag">
+
+                    <h3><span class="heading">About</span></h3>
+                    <p class="paragraph">
+                        I started to learn coding in Feb 2018, starting with Python. Since Jul 2018 I am learning web development with JavaScript, HTML5 and CSS.
+                    </p>
+                    <p class="paragraph">
+                        My projects have been a weather app written in Python, a browser extension + iFrame app tool for linking between a helpdesk software and a helpcenter knowledge base, a website for GoogleFonts Comparison and a Tamagotchi fast-play idle game for browser so far.<br>
+                        <!-- <br>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="">At vero eos et accusam</a> et justo duo dolores et ea rebum.<br> -->
+                        <br>
+                        I am looking for opportunities to level up, improving my skills by applying for Junior-Dev and trainee programs. I am focussing on web development. Contact me if you hire!
+                    </p>
+                    <p class="sect-close"><span class="closing">About</span></p>
+                </section>
+                
+                <div class="hr"><div></div></div>
+
+                <!-- CONTACT -->
+                <section id="Contact" class="colored-bg no-text-selection">
+                    <!--
+                        Alternativen:
+                        "far fa-envelope"
+                        "fab fa-github-square"
+                    -->
+                        <div class="sect-contact-icons">
+                            <a href="https://github.com/jiavu" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jan-patrick-tyra-10351a55/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href=""><i class="fas fa-envelope"></i></a>
+                        </div>
+                </section>
+
+                <div class="hr"><div></div></div>
+
+                <!-- WORKS -->
+                <section id="Works">
+                    
+                    <h3><span class="heading">Works</span></h3>
+
+                    <section ng-repeat="(type, data) in projects">
+                        <h4>{{ type | uppercase }}</h4>
+
+                        <div class="projects-container">
+
+                            <!-- <p style="font-size: 12px;">{{type}}</p> -->
+
+                            <div class="dev-project" ng-repeat="project in data">
+
+                                <div class="tile-wrapper">
+                                    <div class="tile no-text-selection">
+                                        <!-- ng-style="{'background-color': project.preview_bg_color}" -->
+
+                                        <a class="project-link" ng-if="project.link"
+                                        ng-style="{ 'border-color': project.preview_color,
+                                                    'background-color': project.preview_bg_color,
+                                                    'color': project.preview_color
+                                                }"
+                                        ng-href="{{ project.link }}" target="_blank">Go to</a>
+
+                                        <div class="bg-picture"
+                                            ng-style="{'background-image': 'url('+ project.preview_img + ')'}">
+                                        </div>
+
+                                        <div class="tile-cover"
+                                            ng-style="{'background-color': project.preview_bg_color,
+                                                        'color': project.preview_color
+                                                    }">
+
+                                            <!-- I would need to import these fonts in header... -->
+                                            <div class="project-icon"
+                                                ng-style="{'font-family': project.font_family,  
+                                                            'color': project.preview_color
+                                                        }"
+                                                ng-bind-html="checkForIcon(project)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="proj-sheet">
+                                    <h5 class="project-title">{{ project.title }}</h5>
+                                    <h6>
+                                        {{ project.published }}
+                                    </h6>
+                                    <p class="project-description" ng-bind-html="validateHTML(project.description)">
+                                        <!-- {{  }} -->
+                                    </p>
+                                    <div class="proj-tags">
+                                    <span class="small-tag tag no-text-selection"
+                                    ng-repeat="tag in project.tags">
+                                        {{ tag }} 
+                                    </span>
+                                    </div>
+                                    <div class="proj-repo no-text-selection">
+                                        <p>
+                                            <a ng-href="{{ project.repo }}"
+                                                ng-if="project.repo">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <p class="sect-close"><span class="closing">Work</span></p>
+                </section>
+
+                <div class="hr"><div></div></div>
+
+                <!-- DEV TOOLS -->
+                <section id="Dev-tools" class="colored-bg">
+
+                    <h3><span class="heading">Dev Tools</span></h3>
+
+                    <div class="proj-tags">
+                        <span class="big-tag tag no-text-selection"
+                        ng-repeat="tool in devTools">
+                            {{ tool }} 
+                        </span>
+                    </div>
+
+                    <p class="paragraph" style="margin-top: 1rem;">
+                        IDE: Visual Studio Code
+                    </p>
+
+                    <p class="sect-close"><span class="closing">Dev Tools</span></p>
+
+                </section>
+
+                <div class="hr"><div></div></div>
+
+                <!-- MISC -->
+                <section id="Misc">
+
+                    <h3><span class="heading">Misc</span></h3>
+
+                    <a href="http://music.jiavu.de">Jiavu Music</a>
+                    <p class="sect-close"><span class="closing">Misc</span></p>
+                </section>
+
+                <!-- 2 Colors missing in sheet -->
+                <!-- 
+                <div class="hr"><div></div></div>
+                <section>
+                    <h5>Change Color:</h5>
+                    <ul id="color-themes">
+                        <li id="cherry_tomato" class="pseudo-link">cherry tomato</li>
+                        <li id="orange-red" class="pseudo-link">orange-red</li>
+                        <li id="green-turquoise" class="pseudo-link">green-turquoise</li>
+                    </ul>
+
+                    <p class="sect-close"><span class="closing">Misc</span></p>
+                </section>
+                -->
+            </main>
+           
+        </div>
+        <footer>&copy; 2019 Jan-Patrick Tyra. All rights reserved.</footer>   <!-- &copy; = © -->
+        
+
+        <!-- Scripts: -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="./plugins/smooth-scroll.js"></script>
+        <script src="./plugins/changeColor.js"></script>
+        <script src="./plugins/apps.js"></script>
+        <script src="./plugins/navigationBar.js"></script>
+
+    </body>
+
+
+    <!-- Selected fonts: -->
+    <!-- 
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Rubik|Source+Sans+Pro|Thasadith|Coiny" rel="stylesheet">
+
+    compare:
+    https://jiavu.de/GFonts-comparison/
+
+    font-family: 'Thasadith', sans-serif;           ++
+    font-family: 'Lato', sans-serif;                    nicht so gut im navbar. Etwas zu kräftig.
+    font-family: 'Source Sans Pro', sans-serif;     +
+    font-family: 'Raleway', sans-serif;             ++
+    font-family: 'Rubik', sans-serif;               -
+
+    to include for project tiles:
+    Furball:
+    font-family: 'Coiny', cursive;
+    WeatherApp:
+    Carlito
+    Visual Metronome:
+    "Comic Sans MS" ^^
+
+
+    -->
+</html>
+
+
+

@@ -1,0 +1,187 @@
+++++++++++++++++++++++++++++++++
++ My coders portfolio hompeage +
+++++++++++++++++++++++++++++++++
+(web developer portfolio)
+
+------------------
+check:
+
+Color picker
+https://www.w3schools.com/colors/colors_picker.asp
+
+Colors of the year 2019
+https://www.w3schools.com/colors/colors_trends.asp
+
+Color psychology
+https://www.w3schools.com/colors/colors_psychology.asp
+
+Palette chooser:
+http://paletton.com/
+https://coolors.co/
+
+-------------
+Social media icons:
+https://fontawesome.com/?from=io
+https://themetrust.com/plugin/social/
+
+
+============
+Inspirations
+
+https://blog.hubspot.com/marketing/best-personal-websites
+
+https://medium.freecodecamp.org/15-web-developer-portfolios-to-inspire-you-137fb1743cae
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+
+
+===========================
+===== My Design/Style =====
+===========================
+
+einfach aber frisch, motiviert, verspielt, (zeitgemäß-modern)
+
+Mobile first nicht vergessen.
+
+Palette:
+überwiegend dunkelgrau vs gedämpftes weiß.
+
+Farbakzent: grün-türkis. Oder rot-orange?
+// green: freshness, new growth, health, easiness, calmness
+// red: power, strenght, excitement, emotion, passion.
+cherry tomato #E94B3C (summer 2018)
+pepper stem #8D9440   (summer 2019) üargs.
+
+Sonstiges:
+
+- viel whitespace
+- slow transitions (zum Beispiel bei Mouse over <a>)
+- farbige Akzente (zum Beispiel bei Mouse over <a>)
+- maybe use linear-gradient elements
+- Some Animation
+
++#+#+#+#+#+#+#+#+#
+
+Palettes:
+https://coolors.co/111111-232323-383838-3ac179-f2f2f2 (türkis-grün)
+https://coolors.co/101111-212322-313834-3ac179-edf2ef (türkis-grün, grautöne etwas coloriert)
+https://coolors.co/110f0f-232121-3f3c3c-c13a3a-f2efef (orange-rot)
+https://coolors.co/110f0f-232121-3f3c3c-e94b3c-f2f0ef (cherry tomato)
+
+
+
+=========================
+===== My structure: =====
+=========================
+[header]
+    h1: Name
+    h2: Claim
+
+[navigation]
+Burger dropdown menu (slide down to selected section when clicked) right side (sticky).
+
+oder einfach nebeneinander und rechtsseitig:
+Maybe replace burger dropdown with horizontal navigation menu for big screen.
+
+    - About
+    - Dev Tools
+    - Works
+    - Style (change color)
+    - Language
+    - Contact (letter symbol) opens email contact field, maybe opening a foreground window)
+
+[main]
+    (About)
+    p: Short self-description incl. looking for opportunities to improve...
+
+    div linkedIn (symbol) Github (symbol) | Kontakt (Briefsymbol)        // beide als Links
+
+    h3: Skills / Dev Tools
+        - (s. u.)
+        -
+
+    h3: Works
+        h4 (section): Web development
+
+            tabellarisch (Angular.js):
+            save as json and import to obj { project name : [] }
+
+            project name* | description | link** | link to repo (Github)*** | software "stack", tags | date of publishing | ((evtl. Anmerkung wie 'beginners project'?))
+            design: evtl. Kachel mit preview pic, bei mouseover link button. description und Github darunter oder auch erst bei mouseover.
+
+        h4 (section): Other
+
+            project name | link to repo | stack | date of publishing
+
+[footer]
+Menu sections again
+social media links: linkedIn, github
+    later: Stack Overflow, Codepen
+email (Kontakt)
+ganz unten copyright (Impressum und Datenschutz muss?)
+
+---
+* style in font of the project page
+** round button, sth. modern style
+*** Github font
+
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+=================
+self descriptions
+=================
+
+honeypot.io
+I started to learn coding in Feb 18, starting with Python. Since Jul 18 I am learning web development with JavaScript, HTML5 and CSS. My projects have been a weather app written in Python, an extension for Google Chrome which links between a cloud-based helpdesk software and a helpcenter knowledge base sending search queries and formatting copied hyperlinks for an email support, a website for GoogleFonts Comparison and a Tamagotchi fast-play idle game for browser so far.
+I am looking for opportunities to level up, bringing my skills to bear by applying for Junior-Dev and trainee programs.
+I am currently focussing on web development.
+--
+codepen.io
+Started learning programming in Feb 18 (Python) | HTML/CSS since Jul 18 | JS since end of Jul 18
+--
+github.com
+started to learn coding with Python in Feb 18. | Learning HTML/CSS and JS since Jul 18.
+--
+CV:
+
+Visual Metronome.
+Web page with a linear-gradient background pulsating in a definable bpm tempo.
+
+My Furball.
+A Tamagotchi-like fast-play idle game for browser.
+
+Google Chrome Extension + Inlineframe App.
+Linking between helpdesk software and helpcenter knowledge base.
+- opening helpcenter in a new tab appending a search query string.
+- copying and formatting the document-link, closing the helpcenter browser tab.
+
+Google Fonts Comparison.
+Web page for comparing fonts of custom Google Fonts stylesheets.
+
+Infobox v1.5.5 - WeatherApp.
+Weather GUI displaying time, current weather, 3 and 6 hourly forecast, daytime forecast for
+next days. Multilingual support, timezone support.
+Written in Python 3.6, successfully tested on Windows and on a RaspberryPi.
+
+=======================
+Skills/Dev Tools listed
+=======================
+
+JavaScript
+(responsive) HTML5 & CSS
+jQuery
+Angular.JS
+GreenSock Animation Platform (GSAP)
+Python 2, 3.6
+Github
+(node.js)
+
+responsive web design,
+progressive web app
+(smooth slider)
+
+IDE: VSC

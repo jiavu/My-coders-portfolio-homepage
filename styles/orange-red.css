@@ -1,0 +1,16 @@
+/* Coolors Exported Palette - coolors.co/110f0f-232121-3f3c3c-c13a3a-f2efef */
+/* plus dampedcolor, lightedcolor und dampedwhite */
+
+
+/* orange-red */
+
+:root {
+    --black: hsla(0, 6%, 6%, 1);
+    --darkgrey: hsla(0, 3%, 13%, 1);
+    --midgrey: hsla(0, 2%, 24%, 1);
+    --dampedcolor: hsla(0, 54%, 42%, 1);
+    --color: hsla(0, 54%, 49%, 1);
+    --lightedcolor: hsla(0, 54%, 52%, 1);
+    --dampedwhite: hsla(0, 4%, 89%, 1);
+    --white: hsla(0, 10%, 94%, 1);
+}

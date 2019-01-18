@@ -1,0 +1,10 @@
+
+/* cherry tomato */
+
+:root {
+    --black: hsla(0, 6%, 6%, 1);
+    --darkgrey: hsla(0, 3%, 13%, 1);
+    --midgrey: hsla(0, 2%, 24%, 1);
+    --color: hsla(5, 80%, 57%, 1);
+    --white: hsla(20, 10%, 94%, 1);
+}

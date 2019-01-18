@@ -1,0 +1,26 @@
+/*
+"sticky-change"-tool doesn't work for me until I make a fixed body.
+The parent node of the sentinel has to stay fixed when scrolling
+so the sentinel would intersect with it.
+Don't want to make the parent fix because it caused
+a lot of issues.
+*/
+
+#sticky-ref {
+    position: fixed;
+    top: 0; left: 0;
+    height: 200px; width: 300px;
+    background-color: green;
+    opacity: 0.5;
+    z-index: 5;
+}
+.sticky_sentinel--top {
+    position: absolute;
+    left: 0; right: 0;
+    /* visibility: hidden; */
+    opacity: 0.5;
+    /*adjust height and top based on the sticky top position...: */
+    height: 8.5rem;
+    top: 0rem;
+    background-color: yellow;   /* (for adjusting) */
+}

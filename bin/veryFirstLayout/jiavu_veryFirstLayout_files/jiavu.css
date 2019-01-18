@@ -1,0 +1,164 @@
+/*In HTML, :root represents the <html> element and
+is identical to the selector html, except that its
+specificity is higher.*/
+
+
+:root {
+    min-width: 320px;
+    font-size: 30px;
+    font-family: 'Thasadith', sans-serif;
+    /*
+    size of my standard <p> font.
+    Also size for smallest screen... change size in media queries.
+    */
+    
+    /*COLOR VARS */
+    /*
+    var(--black)
+    var(--darkgrey)
+    var(--midgrey)
+    var(--color)
+    var(--white)
+    */
+    --transparent: hsla(0, 0%, 0%, 0);
+
+    --trans-time: 0.6s;
+}
+
+@media only screen and (max-width: 451px) {
+    :root { font-size: 18px; }
+}
+@media only screen and (min-width: 451px) {
+    :root { font-size: 20px; }
+}
+@media only screen and (min-width: 600px) {
+    :root { font-size: 25px; }
+}
+@media only screen and (min-width: 768px) {
+    :root { font-size: 30px; }
+}
+
+
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+}
+.container {    /* media queries, responsive*/
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2%;
+}
+
+/*====================*/
+/* Universal, general */
+/*====================*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    /* font-weight: bold; later.*/
+    color: var(--black);
+    text-decoration: none;
+    transition-duration: var(--trans-time);
+}
+a:hover { color: var(--color); }
+
+h1, h2 { font-weight: normal; }
+section { margin: 1.5rem 0; }
+ul { list-style-type: none; }
+h3, h4 { margin-bottom: 0.9rem; }
+h3 { font-size: 1.4rem; }
+
+.hr {
+    width: 100%;
+    height: 1px;
+}
+.hr > div {
+    width: 20%; height: 100%;
+    background-image: radial-gradient( var(--color), rgb(0,0,0,0) );
+    margin: auto;
+}
+.paragraph {
+    font-size: 0.84rem;
+    margin-bottom: 0.5rem;
+}
+
+/*========*/
+/* HEADER */
+/*========*/
+
+header {
+    margin: 2rem 0;
+}
+
+
+/*=============*/
+/* PSEUDO LINK */
+/*=============*/
+
+.pseudo-link {
+    transition-duration: var(--trans-time);
+    border-left: 1px solid var(--transparent);
+    border-right: 1px solid var(--transparent);
+}
+.pseudo-link:hover {
+    color: var(--color);
+    cursor: pointer;
+    border-left: 1px solid var(--color);
+    border-right: 1px solid var(--color);
+}
+.pseudo-link:active {
+    transition-duration: 0s;
+    border-left: 1px solid var(--color);
+    border-right: 1px solid var(--color);
+    font-weight: 600;
+}
+
+
+/*============*/
+/* NAVIGATION */
+/*============*/
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--midgrey);
+    color: var(--white);
+    overflow: auto;
+    border-radius: 35px;
+    font-size: 0.9rem;
+    padding-right: 0.5rem;
+}
+nav ul { list-style-type: none; }
+
+
+.menu {
+    float: right;
+    padding: 0.6rem;
+    text-align: right;
+}
+.menu > li {
+    display: inline;
+    padding: 0 0.4rem;
+}
+
+
+/*========================================*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--darkgrey);
+    color: var(--white);
+    font-size: 0.5rem;
+    padding: 0.4rem 0;
+}
