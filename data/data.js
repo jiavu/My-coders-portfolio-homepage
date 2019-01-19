@@ -83,7 +83,7 @@ const data = {
                                     <li>Copying and formatting the document-link, closing the helpcenter browser tab.</li>\
                                 </ul>",
                 link : null,
-                repo : "https://github.com/jiavu/Zendesk-HC-App/tree/master/build",
+                repo : "https://github.com/jiavu/Zendesk-HC-App",
                 tags : ["JavaScript", "HTML5", "CSS", "json"],
                 preview_img : "./img/preview_HCTool.PNG",
                 preview_icon : "./img/MagineTV.png",
