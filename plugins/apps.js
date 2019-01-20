@@ -90,7 +90,7 @@ jQuery(function($){
         .to("#contact-window", 0.3, { scaleX: 1});
      
     $(".open-contact").click(()=> { openContact.restart(); });
-    $(".close-contact").click(()=> { openContact.reverse(); });
+    $("#close-contact").click(()=> { openContact.reverse(); });
     $(".cover-body").click(()=> { openContact.reverse(); });
 
 /*===========================================================================*/

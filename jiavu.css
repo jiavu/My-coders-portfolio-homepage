@@ -379,10 +379,12 @@ a.nav-link:hover::after {
 }
 .contact-form { display: none; }
 /* .display-emailaddress { display: none; } */
-.close-contact {
+#close-contact {
     position: absolute;
     top: 0.5rem; right: 0.7rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: var(--midgrey);
 }
 #contact-window input,
 #contact-window label,
