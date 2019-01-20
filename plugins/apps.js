@@ -68,8 +68,39 @@ jQuery(function($){
 /*===========================================================================*/
 
     // OPEN CONTACT FORM
-    $("#open-contact").click(function() {
+    TweenMax.set("#contact-window", { scale: 0});
 
+    const elastic = Elastic.easeOut.config(2, 0.4);
+    const elasticSoft = Elastic.easeOut.config(1, 0.75);
+    const bounce = Bounce.easeOut;
+
+    const openContact = new TimelineMax()
+        .pause()
+        .set(".cover-body", { visibility:'hidden'})
+        .set(".cover-body", { visibility:'visible'})
+        .to(".cover-body", 0.4, { opacity: 0.8})
+        .to("#contact-window", 0.4, {
+            scaleY: 1,
+            ease: bounce
+        })
+        .to("#contact-window", 0.3, {
+            scaleX: 0.005,
+            ease: bounce
+        }, "-=0.3")
+        .to("#contact-window", 0.3, { scaleX: 1});
+     
+    $(".open-contact").click(()=> { openContact.restart(); });
+    $(".close-contact").click(()=> { openContact.reverse(); });
+    $(".cover-body").click(()=> { openContact.reverse(); });
+
+/*===========================================================================*/
+
+    // OPEN DROPDOWN
+    let contentShown = false;
+    $(".dropdown").click(function() {
+        contentShown = !contentShown;
+        contentShown?
+            $(".dropdown-content").show()
+        :   $(".dropdown-content").hide();
     });
-
 });

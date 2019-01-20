@@ -68,7 +68,7 @@ body {
     color: var(--color);
     background-color: var(--white);
     border: 1px solid var(--darkgrey);
-    z-index: 5;
+    z-index: 6;
 }
 
 /*====================*/
@@ -94,6 +94,14 @@ footer {
     padding: 1rem 0;
 }
 
+.cover-body {
+    position: fixed;
+    top: 0; bottom:0; left:0; right:0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+    background-color: var(--midgrey);
+}
 
 /*====================*/
 /* Universal, general */
@@ -234,18 +242,18 @@ a.nav-link:hover::after {
     display: none;
     position: absolute;
     z-index: 3;
-    top: 100%; right: 0;
+    top: calc(100% + 0.6rem); left: 50%;
+    transform: translateX(-50%);
     background-color: var(--darkgrey);
+    border-radius: 0.35rem;
+    box-shadow: var(--shadow-small);
     font-size: 0.777rem;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
     padding: 0.6rem;
 }
-
+.dropdown a { color: var(--white); }
 #color-themes li:hover { color: var(--color); }
 
-#my-email-address {
+.my-email-address {
     font-weight: bold;
     color: var(--color);
     -moz-user-select: all;
@@ -355,19 +363,26 @@ a.nav-link:hover::after {
 /*==============*/
 
 #contact-window {
-    display: none;
-    z-index: 4;
+    z-index: 5;
     position: fixed;
     top: 50%; left: 50%;
+    width: initial;
     transform: translate(-50%, -50%);
     padding: 1.5rem 1.8rem 1rem;
     background-color: var(--dampedwhite);
     border-radius: 0.35rem;
     box-shadow: var(--shadow-big);
 }
-#contact-window div {
+.contact-form div {
     margin-bottom: 0.5rem;
     text-align: left;
+}
+.contact-form { display: none; }
+/* .display-emailaddress { display: none; } */
+.close-contact {
+    position: absolute;
+    top: 0.5rem; right: 0.7rem;
+    font-size: 1.5rem;
 }
 #contact-window input,
 #contact-window label,
