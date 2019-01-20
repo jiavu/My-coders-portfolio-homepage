@@ -24,7 +24,9 @@ specificity is higher.*/
     --shadow-small: -0.04rem 0.08rem 0.15rem var(--midgrey);
     --shadow-big: -0.1rem 0.2rem 1rem var(--midgrey);
 
-    font-family: 'Thasadith', sans-serif;
+    --font: 'Thasadith', sans-serif;
+
+    font-family: var(--font);
 }
 html {
     /* scroll-behavior: smooth; */
@@ -66,7 +68,7 @@ body {
     color: var(--color);
     background-color: var(--white);
     border: 1px solid var(--darkgrey);
-    z-index: 3;
+    z-index: 5;
 }
 
 /*====================*/
@@ -77,6 +79,7 @@ header {
     padding: 2rem 0;
 }
 main {
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,6 +145,7 @@ h3 { font-size: 1.4rem; }
 nav {
     z-index: 2;
     width: 100%; height: 2.35rem;
+    display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -156,6 +160,7 @@ nav.sticky {
 .navigation {
     position: absolute;
     overflow: visible;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +245,7 @@ a.nav-link:hover::after {
 
 #color-themes li:hover { color: var(--color); }
 
-#email-address {
+#my-email-address {
     font-weight: bold;
     color: var(--color);
     -moz-user-select: all;
@@ -264,7 +269,6 @@ a.nav-link:hover::after {
     box-shadow: var(--shadow-small);
     border-radius: 0.35rem;
     cursor: pointer;
-    z-index: 1;
 }
 #underConstruction:hover {
     transform: scale(1.025);
@@ -304,6 +308,7 @@ a.nav-link:hover::after {
     background-image: url("./img/zbynek-burival-544573-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,11 +350,72 @@ a.nav-link:hover::after {
 .closing:hover { padding: 0 0.02rem; }
 
 
+/*==============*/
+/* Contact form */
+/*==============*/
+
+#contact-window {
+    display: none;
+    z-index: 4;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem 1.8rem 1rem;
+    background-color: var(--dampedwhite);
+    border-radius: 0.35rem;
+    box-shadow: var(--shadow-big);
+}
+#contact-window div {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+#contact-window input,
+#contact-window label,
+#contact-window textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    padding: 0.4rem;
+    font-family: var(--font);
+    font-size: 0.7rem;
+}
+#contact-window label {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+#contact-window input[type=submit] {
+    width: initial;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    background-color: var(--color);
+    color: var(--dampedwhite);
+    font-size: 0.8rem;
+    text-decoration: none;
+    /* box-shadow: var(--shadow-small); */
+    /*transition: transform var(--trans-time-fast) ,
+                box-shadow var(--trans-time-fast)*/; 
+}
+#contact-window input[type=submit]:hover {
+    transform: scale(0.97);
+    /* box-shadow: var(--shadow-big); */
+}
+#contact-window input[type=submit]:active {
+    transform: scale(0.9);
+    /* box-shadow: none; */
+}
+#contact-window input[type=submit]:disabled {
+
+}
+
 /*==========================*/
 /* Section: Works, Projects */
 /*==========================*/
 
 .projects-container {
+    display: -webkit-flex;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -358,6 +424,7 @@ a.nav-link:hover::after {
 .dev-project {
     margin: 1rem 0;
     padding: 1.8rem 4% 0.7rem;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -382,6 +449,7 @@ a.nav-link:hover::after {
     transition: transform var(--trans-time-slow),
                 box-shadow var(--trans-time-slow);
     box-shadow: var(--shadow-small);
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -452,6 +520,7 @@ a.nav-link:hover::after {
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 85%; height: 75%;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,6 +598,8 @@ a.nav-link:hover::after {
     #container { padding: 0 2%; }
     .dev-project { width: 90%; }
     .tile-wrapper { width: 80%; }
+    #contact-window { width: 89%; }
+    #contact-window textarea { height: 5rem;}
 }
 
 @media only screen and (min-width: 335px) { 
@@ -536,6 +607,8 @@ a.nav-link:hover::after {
     :root { font-size: 21px; }
     .dev-project { width: 90%; }
     .tile-wrapper { width: 84%; }
+    #contact-window { width: 90%; }
+    #contact-window textarea { height: 6.5rem;}
 }
 
 @media only screen and (min-width: 382px) {
@@ -543,24 +616,32 @@ a.nav-link:hover::after {
     :root { font-size: 24px; }
     .dev-project { width: 90%; }
     .tile-wrapper { width: 80%; }
+    #contact-window { width: 90%; }
+    #contact-window textarea { height: 7rem;}
 }
 @media only screen and (min-width: 451px) {     /* bp 451px */
     /* phones */
     :root { font-size: 27.5px; }
     .dev-project { width: 90%; }
     .tile-wrapper { width: 80%; }
+    #contact-window { width: 93%; }
+    #contact-window textarea { height: initial;}
 }
 @media only screen and (min-width: 600px) {     /* bp 600px */
     /* portrait tablets, large phones */
     :root { font-size: 24px; }
     .dev-project { width: 48%; }
     .tile-wrapper { width: 80%; }
+    #contact-window { width: 88%; }
+    #contact-window textarea { height: initial;}
 }
 @media only screen and (min-width: 768px) {     /* bp 768px */
     /* landscape tables, laptops, desktops */
     :root { font-size: 26px; }
     .dev-project { width: 47%; }
     .tile-wrapper { width: 80%; }
+    #contact-window { width: 80%; }
+    #contact-window textarea { height: initial;}
 }
 @media only screen and (min-width: 1080px) {     /* bp 1080px */
     /* large desktops */
@@ -568,6 +649,8 @@ a.nav-link:hover::after {
     #container { padding: 0 5%; }
     .dev-project { width: 45%; }
     .tile-wrapper { width: 86%; }
+    #contact-window { width: initial; }
+    #contact-window textarea { height: initial;}
 }
 
 /* Burger Menu ab unter 600px */

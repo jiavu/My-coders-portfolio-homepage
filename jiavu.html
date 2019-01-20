@@ -33,7 +33,34 @@
     <body>
         <!-- <div id="sticky-ref"></div> -->
         <div id="Safari-issue">This page doesn't work properly on Safari yet.</div>
+
         <div id="container">
+
+            <div id="contact-window">
+                <h3><span class="heading">Contact</span></h3>
+                
+                <form name="contactForm" method="post" action="">
+                <!-- ng-app="contactForm" ng-controller="contactFormControl" novalidate -->
+                    <div>
+                        <label for="email-address" required>Your Email:</label>
+                        <input type="email" name="emailAddress" id="email-address" placeholder="you@example.com" required>
+                    </div>
+                    <div>
+                        <label for="email-subject" required>Subject:</label>
+                        <input type="text" name="emailSubject" id="email-subject" placeholder="Awesome" required>
+                    </div>
+                    <div>
+                        <label for="email-message">Your Message:</label>
+                        <textarea name="emailMessage" id="email-message" rows="9" cols="60" placeholder="Write something..." required></textarea>
+                    </div>
+                    <input type="submit" value="Send">
+                    <!-- ng-disabled="contactForm.emailAddress.$dirty && contactForm.emailAddress.$invalid ||
+                                    contactForm.emailSubject.$dirty || contactForm.emailMessage.$dirty" -->
+                                    <!-- https://www.w3schools.com/angular/angular_validation.asp -->
+                </form>
+                <p class="sect-close"><span class="closing">Contact</span></p>
+
+            </div>
 
             <header>
                 <h1>Jan-Patrick Tyra</h1>
@@ -59,8 +86,8 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="javascript:void(0)" class="nav-link"><i class="far fa-envelope"></i></a>
-                            <div class="dropdown-content" id="email-address">jan.p.tyra@gmail.com</div>
+                            <a href="javascript:void(0)" id="open-contact" class="nav-link"><i class="far fa-envelope"></i></a>
+                            <div class="dropdown-content" id="my-email-address">jan.p.tyra@gmail.com</div>
                         </li>
                     </ul>
                 </div>
@@ -86,7 +113,7 @@
                         </li>
                         <li class="dropdown">
                             <a href="javascript:void(0)" class="nav-link"><i class="far fa-envelope"></i></a>
-                            <div class="dropdown-content" id="email-address">jan.p.tyra@gmail.com</div>
+                            <div class="dropdown-content" id="my-email-address">jan.p.tyra@gmail.com</div>
                         </li>
                     </ul>
                 </div>
@@ -112,7 +139,7 @@
                 <div class="hr"><div></div></div>
 
                 <!-- ABOUT -->
-                <section id="About" class="get-closing-tag">
+                <section id="About">
 
                     <h3><span class="heading">About</span></h3>
                     <p class="paragraph">

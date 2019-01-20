@@ -21,6 +21,12 @@ angular.module("myData", [])
         }
     });
 
+angular.module("contactForm", [])
+    .controller("contactFormControl", function($scope) {
+        // do I need the controller?
+        // validations are in .html
+    })
+
 
 /*===========================================================================*/
 
@@ -59,6 +65,11 @@ jQuery(function($){
         :   $(".flip-box").css("transform", "rotateY(180deg)");
     });
     
+/*===========================================================================*/
 
+    // OPEN CONTACT FORM
+    $("#open-contact").click(function() {
+
+    });
 
 });
