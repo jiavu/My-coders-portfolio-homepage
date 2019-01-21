@@ -22,7 +22,7 @@ const data = {
                 description : "The awesomest thing you've ever seen. It makes your life awesome.",
                 link : "https://www.awesome.iam",
                 repo : null,
-                tags : ["JavaScript", "jQuery", "Angular.JS"],
+                tags : ["JavaScript", "jQuery", "AngularJS"],
                 preview_img : "./img/Bg_FrblCode_long.PNG",
                 preview_icon : "./img/test_icon.svg",
                 font_family : null,
@@ -50,7 +50,7 @@ const data = {
                 description : "Web page with a linear-gradient background pulsating in a definable bpm tempo.",
                 link : null,
                 repo : "https://github.com/jiavu/linear-gradient-metronome",
-                tags : ["JavaScript", "Angular.JS", "GSAP", "CSS", "HTML5"],
+                tags : ["JavaScript", "AngularJS", "GSAP", "CSS", "HTML5"],
                 preview_img : "./img/preview_visualMetronome2.png",
                 preview_icon : null,
                 font_family : "'Comic Sans MS', sans-serif",
@@ -64,7 +64,7 @@ const data = {
                 description : "This website.",
                 link : null,
                 repo : "https://github.com/jiavu/My-coders-portfolio-homepage",
-                tags : ["JavaScript", "Angular.JS", "jQuery", "CSS", "HTML5", "Responsive Design"],
+                tags : ["JavaScript", "AngularJS", "jQuery", "CSS", "HTML5", "Responsive Design"],
                 preview_img : "./img/preview_portfolio_3.PNG",
                 preview_icon : null,
                 font_family : null,
@@ -110,5 +110,5 @@ const data = {
             }
         ],
     },
-    devTools : ["JavaScript", "HTML5", "CSS3", "Responsive Design","jQuery", "GreenSock Animation Platform(GSAP)", "Progessive Web App", "Python 2/3", "git", "json", "node.js"]
+    devTools : ["JavaScript", "HTML5", "CSS3", "Responsive Design", "jQuery", "GreenSock Animation Platform(GSAP)", "AngularJS", "Progessive Web App", "Python 2/3", "git", "json", "node.js"]
 };

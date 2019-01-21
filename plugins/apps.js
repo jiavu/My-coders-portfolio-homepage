@@ -76,6 +76,8 @@ jQuery(function($){
 
     const openContact = new TimelineMax()
         .pause()
+        .set(".contact-window-container", {display: 'none'})
+        .set(".contact-window-container", {display: 'flex'})
         .set(".cover-body", { visibility:'hidden'})
         .set(".cover-body", { visibility:'visible'})
         .to(".cover-body", 0.4, { opacity: 0.8})
@@ -92,6 +94,7 @@ jQuery(function($){
     $(".open-contact").click(()=> { openContact.restart(); });
     $("#close-contact").click(()=> { openContact.reverse(); });
     $(".cover-body").click(()=> { openContact.reverse(); });
+    // not working anymore, .cover-body is covered by .contact-window-container
 
 /*===========================================================================*/
 
@@ -103,4 +106,11 @@ jQuery(function($){
             $(".dropdown-content").show()
         :   $(".dropdown-content").hide();
     });
+
+/*===========================================================================*/
+
+    // SCROLL UP FROM PAGE END
+    $(".scroll-up").click(function() {
+        $(window).scrollTop(0);
+    })
 });
