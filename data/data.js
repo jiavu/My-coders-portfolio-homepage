@@ -102,7 +102,7 @@ const data = {
                 link : null,
                 repo : "https://github.com/jiavu/Infobox---WeatherApp",
                 tags : ["Python 3", "Tkinter", "pytz", "timezonefinder", "Pillow", "api"],
-                preview_img : "./img/preview_weatherapp.PNG",
+                preview_img : "./img/preview_weatherapp2.PNG",
                 preview_icon : null,
                 font_family : "Carlito",
                 preview_color : "turquoise",
