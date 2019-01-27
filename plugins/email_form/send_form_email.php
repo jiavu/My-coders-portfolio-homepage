@@ -2,10 +2,10 @@
 <!-- File Name: send_form_email.php (you must use this filename exactly) -->
 
 <?php
-	if(isset($_POST['email'])) {
+	if(isset($_POST['emailAddress'])) {
 	
 		// EDIT THE 2 LINES BELOW AS REQUIRED
-		$email_to = "contact@jiavu.de";
+		$email_to = "jan.p.tyra@gmail.com";				// or "contact@jiavu.de"
 		$email_subj = "Email from jiavu.de";
 	
 		function died($error) {
@@ -26,7 +26,8 @@
 			!isset($_POST['emailSubject']) ||
 			!isset($_POST['emailMessage']) ||
 			/* !isset($_POST['telephone']) || */
-			/* !isset($_POST['comments'])) { */
+			/* !isset($_POST['comments'])*/
+		) { 
 			died('I am sorry, but there appears to be a problem with the form you submitted.');       
 		}
 	
