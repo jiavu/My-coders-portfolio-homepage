@@ -388,8 +388,8 @@ a.nav-link:hover::after {
     margin-bottom: 0.5rem;
     text-align: left;
 }
-.contact-form { display: none; }
-/* .display-emailaddress { display: none; } */
+/* .contact-form { display: none; } */
+.display-emailaddress { display: none; }
 #close-contact {
     position: absolute;
     top: 0.5rem; right: 0.7rem;
