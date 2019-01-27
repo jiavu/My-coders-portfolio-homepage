@@ -82,7 +82,7 @@
 		//$email_message .= "Last Name: ".clean_string($last_name)."\n";
 		$email_final .= "Email: ".clean_string($email_address)."\n";
 		$email_final .= "Subject: ".clean_string($email_subject)."\n";
-		$email_final .= "Message: ".clean_string($email_message)."\n";
+		$email_final .= "Message:\n".clean_string($email_message)."\n";
 		//$email_message .= "Telephone: ".clean_string($telephone)."\n";
 		//$email_message .= "Comments: ".clean_string($comments)."\n";
 	

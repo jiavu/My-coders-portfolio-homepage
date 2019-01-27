@@ -16,6 +16,20 @@ const data = {
                 preview_bg_color: "hsl(0, 0%, 95%)"
             },
             {
+                title : "My Portfolio",
+                short_title : "My Portfolio",
+                published : "ongoing",
+                description : "This website.",
+                link : null,
+                repo : "https://github.com/jiavu/My-coders-portfolio-homepage",
+                tags : ["JavaScript", "AngularJS", "jQuery", "CSS", "HTML5", "Responsive Design", "PHP"],
+                preview_img : "./img/preview_portfolio_3.PNG",
+                preview_icon : null,
+                font_family : null,
+                preview_color : null,
+                preview_bg_color: null
+            },
+            {
                 title : "Awesome website (test tile)",
                 short_title : "Awesome website",
                 published : "January 2055",
@@ -56,20 +70,6 @@ const data = {
                 font_family : "'Comic Sans MS', sans-serif",
                 preview_color : "blue",
                 preview_bg_color: "black"
-            },
-            {
-                title : "My Portfolio",
-                short_title : "My Portfolio",
-                published : "ongoing",
-                description : "This website.",
-                link : null,
-                repo : "https://github.com/jiavu/My-coders-portfolio-homepage",
-                tags : ["JavaScript", "AngularJS", "jQuery", "CSS", "HTML5", "Responsive Design"],
-                preview_img : "./img/preview_portfolio_3.PNG",
-                preview_icon : null,
-                font_family : null,
-                preview_color : null,
-                preview_bg_color: null
             }
         ],
         other: [
