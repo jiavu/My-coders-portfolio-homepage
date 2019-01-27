@@ -92,13 +92,15 @@
 					'X-Mailer: PHP/' . phpversion();
 		@mail($email_to, $email_subj, $email_final, $headers);  
 
-		/* ?>		<!-- Why are the php tags placed this way? -->
+		?>		<!-- Why are the php tags placed this way? -->
 		
 		<!-- include your own success html here -->
 		
-		Thank you for contacting us. We will be in touch with you very soon.
+		Thank you for contacting me. I will be in touch with you very soon.<br>
+		<br>
+		<a href="https://jiavu.de">Back</a>
 		
-		<?php */
+		<?php
 	
 	}
 ?>
