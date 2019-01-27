@@ -5,8 +5,8 @@
 	if(isset($_POST['email'])) {
 	
 		// EDIT THE 2 LINES BELOW AS REQUIRED
-		$email_to = "jan.p.tyra@gmail.com";
-		$email_subject = "Email from jiavu.de";
+		$email_to = "contact@jiavu.de";
+		$email_subj = "Email from jiavu.de";
 	
 		function died($error) {
 			// your error code can go here
@@ -81,6 +81,7 @@
 		//$email_message .= "Last Name: ".clean_string($last_name)."\n";
 		$email_final .= "Email: ".clean_string($email_address)."\n";
 		$email_final .= "Subject: ".clean_string($email_subject)."\n";
+		$email_final .= "Message: ".clean_string($email_message)."\n";
 		//$email_message .= "Telephone: ".clean_string($telephone)."\n";
 		//$email_message .= "Comments: ".clean_string($comments)."\n";
 	
@@ -88,7 +89,7 @@
 		$headers = 'From: '.$email_address."\r\n".
 					'Reply-To: '.$email_address."\r\n" .
 					'X-Mailer: PHP/' . phpversion();
-		@mail($email_to, $email_subject, $email_final, $headers);  
+		@mail($email_to, $email_subj, $email_final, $headers);  
 
 		/* ?>		<!-- Why are the php tags placed this way? -->
 		
