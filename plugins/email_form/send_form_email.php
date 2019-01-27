@@ -24,8 +24,8 @@
 			/* !isset($_POST['last_name']) || */
 			!isset($_POST['emailAddress']) ||
 			!isset($_POST['emailSubject']) ||
-			!isset($_POST['emailMessage']) ||
-			/* !isset($_POST['telephone']) || */
+			!isset($_POST['emailMessage'])/* ||
+			!isset($_POST['telephone']) || */
 			/* !isset($_POST['comments'])*/
 		) { 
 			died('I am sorry, but there appears to be a problem with the form you submitted.');       
