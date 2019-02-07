@@ -2,23 +2,23 @@ const data = {
     projects : {
         websites: [
             {
-                title : "My Furball",
-                short_title : "My Furball",
-                published : "December 2018",
-                description : "A Tamagotchi-like fast-play idle browser game.",
-                link : "https://jiavu.de/furball",
-                repo : "https://github.com/jiavu/Furbal",
-                tags : ["JavaScript", "jQuery", "GSAP", "CSS", "HTML5", "Responsive Design", "Progressive Web App"],
-                preview_img : "./img/preview_furbal.png",
-                preview_icon : null,
-                font_family : "'Coiny', cursive",
-                preview_color : "black",
-                preview_bg_color: "hsl(0, 0%, 95%)"
+                title : "eCommerce Website Template",
+                short_title : "eCommerce template",
+                published : "ongoing",
+                description : "A template for an eCommerce website.",
+                link : null,
+                repo : "https://github.com/jiavu/ecommerce-website_template",
+                tags : ["JavaScript", "ReactJS", "CSS", "HTML5"],
+                preview_img : "./img/preview_eCommerceTemplate.png",
+                preview_icon : "./img/preview_icon_eComTempl.png",
+                font_family : "sans-serif",
+                preview_color : "#444",
+                preview_bg_color: "#add8e6"
             },
             {
                 title : "My Portfolio",
                 short_title : "My Portfolio",
-                published : "ongoing",
+                published : "January 2019",
                 description : "This website.",
                 link : null,
                 repo : "https://github.com/jiavu/My-coders-portfolio-homepage",
@@ -28,6 +28,20 @@ const data = {
                 font_family : null,
                 preview_color : null,
                 preview_bg_color: null
+            },
+            {
+                title : "My Furball",
+                short_title : "My Furball",
+                published : "December 2018",
+                description : "A Tamagotchi-like fast-play browser game.",
+                link : "https://jiavu.de/furball",
+                repo : "https://github.com/jiavu/Furbal",
+                tags : ["JavaScript", "jQuery", "GSAP", "CSS", "HTML5", "Responsive Design", "Progressive Web App"],
+                preview_img : "./img/preview_furbal.png",
+                preview_icon : null,
+                font_family : "'Coiny', cursive",
+                preview_color : "black",
+                preview_bg_color: "hsl(0, 0%, 95%)"
             },
             {
                 title : "Awesome website (test tile)",
@@ -110,5 +124,5 @@ const data = {
             }
         ],
     },
-    devTools : ["JavaScript", "HTML5", "CSS3", "Responsive Design", "jQuery", "GreenSock Animation Platform(GSAP)", "AngularJS", "Progessive Web App", "Python 2/3", "git", "json", "node.js"]
+    devTools : ["JavaScript", "HTML5", "CSS3", "Responsive Design", "jQuery", "GreenSock Animation Platform(GSAP)", "ReactJS", "AngularJS", "Progessive Web App", "Python 2/3", "git", "json", "node.js"]
 };
