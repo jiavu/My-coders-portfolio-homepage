@@ -9,7 +9,7 @@ const data = {
                 link : null,
                 repo : "https://github.com/jiavu/ecommerce-website_template",
                 tags : ["JavaScript", "ReactJS", "CSS", "HTML5"],
-                preview_img : "./img/preview_eCommerceTemplate.png",
+                preview_img : "./img/preview_eCommerceTemplate2.png",
                 preview_icon : "./img/preview_icon_eComTempl.png",
                 font_family : "sans-serif",
                 preview_color : "#444",
