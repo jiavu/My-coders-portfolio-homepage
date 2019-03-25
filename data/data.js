@@ -118,7 +118,7 @@ const data = {
                 tags : ["Python 3", "Tkinter", "pytz", "timezonefinder", "Pillow", "api"],
                 preview_img : "./img/preview_weatherapp2.PNG",
                 preview_icon : null,
-                font_family : "Carlito",
+                font_family : "Carlito, sans-serif",
                 preview_color : "turquoise",
                 preview_bg_color: "hsl(0, 0%, 12%)"    //grey12
             }
