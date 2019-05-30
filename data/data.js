@@ -1,6 +1,20 @@
 const data = {
     projects : {
         websites: [
+          {
+            title : "Browser Startpage v.1",
+            short_title : "start page",
+            published : "May 2019",
+            description : "First version of a browser start page, displaying current weather and forecast.",
+            link : "https://jiavu.de/weather",
+            repo : "https://github.com/jiavu/browser-start-page",
+            tags : ["ReactJS", "JavaScript", "CSS", "HTML5"],
+            preview_img : "./img/preview_browserStartPageV1.PNG",
+            preview_icon : "./img/lightClouds.svg",
+            font_family : "'Josefin Sans', sans-serif",
+            preview_color : "hsl(0, 0%, 93%)",
+            preview_bg_color: "hsl(0, 0%, 18%)"
+          },
             {
                 title : "eCommerce Website Template",
                 short_title : "eCommerce template",
