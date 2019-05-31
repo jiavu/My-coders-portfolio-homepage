@@ -17,7 +17,7 @@ const data = {
       },
       {
         title: "Galgenraten",
-        short_title: "Galgenraten",
+        short_title: "Galgen_aten",
         published: "April 2019",
         description: "A server-based 2-player word guessing game. Language: German",
         link: null,
